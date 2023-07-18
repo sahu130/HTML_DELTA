@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment level 3</title>
+</head>
+<body>
+    <table border="black">
+
+        <caption>Student Information</caption>
+
+               <tr>
+
+                   <th rowspan="6">info</th>
+                   <th rowspan="2">Name</th>
+                   <th colspan="2">Address</th>
+                   
+               </tr>  
+
+               <tr>
+
+                   <th>City</th>
+                   <th>House</th>
+
+               </tr>
+
+               <tr>
+                    <td>A</td> 
+                    <td>Delhi</td>  
+                    <td>1</td>
+
+               </tr>
+
+               <tr>
+                    <td>B</td> 
+                    <td>Mumbai</td>  
+                    <td>2</td>
+
+               </tr>
+
+               <tr>
+
+                    <td>C</td> 
+                    <td>Kolkata</td>  
+                    <td>3</td>
+
+               </tr>
+
+               <tr>
+
+                    <td>D</td> 
+                    <td>Pune</td>  
+                    <td>4</td>
+
+              </tr>
+          
+    </table>
+
+
+    <br>
+    <hr>
+    <br>
+
+    <form action="/action?" >
+            <div>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" >
+
+                <br>
+                <br>
+                
+                Sex:
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+
+                <br>
+                <br>
+
+
+                <label for="place">Country</label>
+                <select name="country" id="place">
+                       <option value="India">India</option>
+                       <option value="USA">USA</option>
+                       <option value="select an option" selected >Select_an_option</option>
+                </select>
+
+
+                <br>
+                <br>
+                
+                <label for="message">Message:</label>
+                <br>
+                <textarea id="message" placeholder="put your thoughts" name="thoughts" rows="5" cols="30"></textarea>
+
+
+                <br>
+                <br>
+
+                <input type="checkbox" name="subscribe" id="bell icon" >
+                <label for="bell icon">Subscribe?</label>
+
+                <br>
+                <br>
+
+
+                <button type="submit">Submit</button>
+
+                <!-- file:///C:/action?name=sanjita&gender=female&country=India&thoughts=I++am+vegetarian&subscribe=on -->
+                    
+            </div>
+
+    </form>
+    
+    <br>
+    <hr>
+    <br>
+
+
+     <form action=/feedback?>
+
+          <div>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" >
+
+            <br>
+            <br>
+
+
+            <label for="email">E-mail:</label>
+            <input type="text" id="email" name="email" >
+
+            <br>
+            <br>
+  
+            <label for="message">Message:</label>
+            <br>
+            <textarea id="message" name="thoughts" rows="5" cols="30"></textarea>
+
+            <br>
+            <br>
+
+            <label for="rating">Rate us out of 5:</label>
+            <br>
+            <input type="radio" id="rating" name="rating" value="1">
+            <label for="rating">1</label>
+            <br>
+            <input type="radio" id="rating" name="rating" value="2">
+            <label for="rating">2</label>
+            <br>
+            <input type="radio" id="rating" name="rating" value="3">
+            <label for="rating">3</label>
+            <br> 
+            <input type="radio" id="rating" name="rating" value="4">
+            <label for="rating">4</label>
+            <br> 
+            <input type="radio" id="rating" name="rating" value="5">
+            <label for="rating">5</label>
+            <br>
+
+            <br>
+
+
+            <button type="submit">Send your message</button>
+
+            <!-- file:///C:/feedback?name=sanjita&email=sahusanjita4%40gmail.com&thoughts=vxdfcb&rating=5 -->
+            
+    
+
+
+          </div>        
+                
+                
+                
+                
+     </form>
+</body>
+</html>

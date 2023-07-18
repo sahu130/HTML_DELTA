@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms in html</title>
+</head>
+<body>
+
+    <form action="/action>">  <!--to create forms where user can fill data , where that data will be directed to ? = action attribute defines that-->
+
+        <div>
+
+            <label for = "username">enter username:</label>  <!--classic approach to write label and input type together[label "for" attribute name  =  input element "id" ]-->
+            <input
+                type = "text" 
+                placeholder="enter username" 
+                id="username"
+                name="user"/>  <!--name=value pair [whatever value we pass in the input element it gets submitted into form = input = name attribute as value {name attribute is used to refer to the value inside it}/ action = user = value ]-->
+
+                <!-- file:///C:/action%3E?user =iofjdiesf [ action = user = value]-->
+
+        </div>
+
+        <div>
+            <label for = "password">enter password</label>
+            <input type = "password" placeholder="enter password" id = "password" name="pass"/>
+         
+        </div>    
+
+
+        <div>
+             <label for="age">enter age :</label>
+             <input type = "number" placeholder = "enter your age" id = "age" name="years old"/>
+        </div>
+            
+
+        <span>
+            <label> <!--loose approach to write label and type together [ not recommended ]-->
+
+                    Number
+                    <input type = "number" placeholder="enter mobile no"/>
+                    <!--number input-->
+
+           </label>
+        </span>
+
+        <div> <!--CHECKBOX BUTTON-->
+            <label for="age">I am 18+</label>
+            <input type="checkbox" name="age" id="age" checked/> <!--checked by default--> <!--checkbox type = to tick some thing ☑️-->
+            <input type="checkbox" name="age" id="age">  <!--unchecked -->
+            <button>submit</button>
+        </div>
+               
+
+        <div> <!--multiple radio buttons-->
+
+             <input type="radio" name="fruit" id="apple" value="apple"> <!--value to explicitly define the value choosen after submitting-->
+             <label for="apple">apple</label>
+             <input type="radio" name="fruit" id="mango" value="mango">  <!--radio buttons = grouped here[only one clikable at one point of time]= because all name attribute are same = fruit-->
+             <label for="mango">mango</label>
+             <input type="radio" name="fruit" id="mausambi"value="mausambi">
+             <label for="mausambi">mausambi</label>
+
+             <button>submit</button>
+        
+            </div>
+
+        <br>
+
+        <div> <!--multiple checkboxes-->    
+
+            <input type="checkbox" name="sub" id="sci" value="sci">  
+            <label for="sci">sci</label>
+            <input type="checkbox" name="sub" id="maths">  
+            <label for="maths">maths</label>
+            <input type="checkbox" name="sub" id="coding">  
+            <label for="coding">coding</label>
+
+            <button>submit</button>
+
+        </div>
+
+
+        <!-- file:///C:/action%3E?= after submitting the form data this is where the whole data is redicrected to = defined in action attribute inside form element earlier -->
+        <button type ="Submit">submit</button> <!--this element type will submit data-->
+
+        <!-- file:///C:/action%3E? --><!--no matter on what button you click the default behaviour of that button element will be to make the data/form submit to the defined server-->
+        <button type = "button">hello</button>  <!--this element type will not do anything = simple button-->
+
+        <button type="reset">reset</button>   <!--this element type will reset the data-->
+        
+        <!-- button created using input element = [not good prog practice] -->
+        <input type="submit" value="click me"/>
+        <input type="button" value="click me b2"/>
+        <input type="reset" value="click me b3"/>
+
+
+
+
+        
+    <div> <!--drop down menu-->
+         choose your profession:
+            <select name="profession" id="profession"> <!--select tag = used to create dropdown menus-->
+                <option value="">choose your option</option> <!--option attribute = to create options of dropdown menus-->
+                <option value="stu" selected >student</option> <!--selected keyword = to define by default select option-->
+                <option value="dev">developer</option>
+            </select>
+            <button>submit</button>
+     </div>
+    
+
+    <div> <!--range button-->
+
+            <label for="vol">select your volume level:</label>
+            <input type="range" id="vol" min="0" max="100" name="vol" value="50"/>  <!--range = used to create range button / value attribute used to set a default range-->
+            <button>submit</button>
+
+    </div> 
+
+
+    <div> <!--text area -->
+        <label for="feedback">enter your feedback:</label>
+        <textarea id="feedback" placeholder="put your valuable feedback" name="feedback" id="feedback" rows="5" cols="100" ></textarea> <!--textarea tag used to create area where you can enter text(comments) / by default text area occuppy rows = 2 + columns = 10-->
+        <button>submit</button>
+    </div>
+
+         
+    </form>
+
+new form:
+
+    <form action="https://www.youtube.com/results?">
+            <input type="text" placeholder="enter query" name="search_query">
+            <button>search</button>
+    </form>
+
+new form:
+    <!-- practice Q -->
+    <form action="https://www.google.com/search?">
+            <input type="text" placeholder="search anything" name="q">
+            <button>search</button>
+    </form>
+
+
+
+     
+</body>
+
+</html>
